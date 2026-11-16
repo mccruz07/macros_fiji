@@ -1,8 +1,6 @@
 # Macros para Fiji / ImageJ
 
-Coleção de cinco macros para conversão de imagens de microscopia, salvamento de imagens abertas e processamento de séries temporais.
-
-**Repositório de destino:** https://github.com/mccruz07/macros_fiji
+Coleção de macros para conversão de imagens de microscopia, salvamento de imagens abertas e processamento de séries temporais.
 
 > Esta documentação descreve o código fornecido, sem modificá-lo. A revisão foi estática: as macros não foram executadas no Fiji nem validadas com imagens de teste. Algumas contêm problemas conhecidos; consulte o estado de cada uma antes de usar.
 
@@ -67,6 +65,3 @@ A macro de foco pede citação quando usada para gerar dados de publicações e 
 
 Ao registrar uso científico, informe a macro, o autor indicado, o repositório e a versão ou commit efetivamente utilizado. Não há DOI ou versão de lançamento informados no material recebido.
 
-## Licença
-
-Nenhum arquivo de licença foi encontrado no material fornecido. Uma licença de uso e redistribuição deve ser escolhida pelo titular dos direitos antes de anunciar o projeto como software de código aberto.
