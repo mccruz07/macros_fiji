@@ -2,11 +2,9 @@
 
 [← README](../README.md) · [Código](../czitotiff.ijm)
 
-## Objetivo e estado atual
+## Objetivo
 
 Importar as séries de arquivos Zeiss CZI e salvar cada série como TIFF. O código consulta a quantidade de séries com Bio-Formats e usa um campo de metadados da cena para compor o nome de saída.
-
-**Estado:** revisão estática, sem execução. O filtro de arquivos precisa de correção antes de processar pastas heterogêneas.
 
 ## Requisitos e entradas
 
@@ -51,10 +49,6 @@ O nome base vem de `File.nameWithoutExtension` após a importação; confirme se
 - Não há tratamento de erros de leitura, metadados ou gravação.
 - `savePath` e `series` são calculados, mas não determinam o caminho usado para salvar.
 - Não há garantia implementada de preservação integral dos metadados do CZI em TIFF.
-
-## Validação sugerida
-
-Após corrigir o filtro, use um CZI conhecido com duas ou mais séries. Compare quantidade de TIFFs, conteúdo de cada série, dimensões C/Z/T, tipo de pixel e calibração com a importação manual. Teste também nomes de cena repetidos, metadado ausente e uma pasta com arquivos de outras extensões.
 
 ## Autoria no arquivo
 

@@ -2,11 +2,9 @@
 
 [← README](../README.md) · [Código](../saveallopenimages.ijm)
 
-## Objetivo e estado atual
+## Objetivo
 
 Salvar as imagens abertas no Fiji como TIFF em uma pasta escolhida e, ao concluir o laço, executar `Close All`.
-
-**Estado:** revisada estaticamente; não executada no Fiji nesta preparação.
 
 ## Entradas e requisitos
 
@@ -39,10 +37,6 @@ Por exemplo, um título `amostra` é usado como base de saída `amostra` no dire
 - Não há tratamento explícito de falhas de gravação ou destinos sem permissão.
 - A quantidade `nImages` é consultada na condição do laço; o código pressupõe que a coleção de imagens não seja alterada durante o salvamento.
 - Salvar como TIFF não garante reproduzir todos os metadados do formato de origem.
-
-## Validação sugerida
-
-Abra duas imagens pequenas com nomes distintos, execute em uma pasta vazia e confirme dois TIFFs reabrindo-os. Compare pixels, dimensões, tipo de pixel e, quando houver, canais/Z/tempos e calibração. Teste separadamente títulos repetidos e títulos com extensão. Confirme o fechamento das imagens.
 
 ## Autoria
 

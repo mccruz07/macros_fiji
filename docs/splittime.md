@@ -2,11 +2,9 @@
 
 [← README](../README.md) · [Código](../splittime.ijm)
 
-## Objetivo e estado atual
+## Objetivo
 
 O nome sugere separação de pontos temporais, e há uma linha comentada com a opção `split_timepoints`. Entretanto, **o código ativo apenas importa arquivos `.tif` como hyperstacks; não separa os tempos e não salva resultados**.
-
-**Estado:** incompleta e não testada em execução. Não deve ser apresentada como uma rotina funcional de exportação por tempo.
 
 ## Requisitos e entradas
 
@@ -40,10 +38,6 @@ Não existem chamadas ativas de salvamento. A saída do processamento se limita 
 ## Próximas etapas sugeridas
 
 Para implementar a finalidade indicada pelo nome: corrigir o filtro, definir se a saída de cada tempo deve preservar todos os canais e planos Z, ativar a separação apropriada, salvar cada resultado com índice temporal único e liberar as imagens após salvar. Essas alterações não foram feitas nesta entrega de documentação.
-
-## Validação futura
-
-Use um hyperstack conhecido com dois canais, três planos Z e quatro tempos. Uma implementação de separação por tempo que preserve C/Z deve produzir quatro arquivos, cada um com C=2, Z=3 e T=1. Compare pixels e calibração com o original. Esse é um critério proposto, não o comportamento atual.
 
 ## Autoria
 

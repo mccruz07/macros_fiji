@@ -2,11 +2,9 @@
 
 [← README](../README.md) · [Código](../svstotiff.ijm)
 
-## Objetivo e estado atual
+## Objetivo
 
 Abrir uma série escolhida de arquivos SVS, converter a imagem para RGB e salvá-la como TIFF.
-
-**Estado:** revisão estática, sem execução. O código repete a série selecionada e contém um filtro incompleto de arquivos.
 
 ## Requisitos e entradas
 
@@ -54,10 +52,6 @@ A conversão RGB muda a representação da imagem. Confira a adequação dessa s
 - Não há tratamento de falhas nem proteção explícita contra nomes repetidos.
 - A contagem de séries pode variar entre arquivos; o padrão `4` não é universal.
 - `savePath` é calculado, mas não é usado para salvar.
-
-## Validação sugerida
-
-Corrija o filtro e remova a repetição desnecessária se a intenção for exportar apenas uma série. Use um SVS pequeno ou uma série de dimensões reduzidas, compare com a importação manual e confirme um único resultado por arquivo. Teste série inexistente, pasta mista e arquivos com quantidades diferentes de séries.
 
 ## Autoria no arquivo
 

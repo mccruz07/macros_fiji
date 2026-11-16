@@ -2,11 +2,9 @@
 
 [← README](../README.md) · [Código](../FindFocusMacroEdge.ijm)
 
-## Objetivo e estado atual
+## Objetivo
 
 A finalidade declarada é transformar uma sequência de imagens em um hyperstack Z×T, calcular uma medida de foco por plano Z e produzir uma série temporal com um plano selecionado por tempo. Há opções de filtro de bordas, região central de análise e deslocamento em Z.
-
-**Estado:** o arquivo recebido apresenta problemas de sintaxe e lógica. A descrição abaixo explica sua intenção e implementação; não certifica funcionamento. Não use a saída como seleção focal validada antes de corrigir e testar a macro.
 
 ## Requisitos e entradas previstas
 
@@ -16,7 +14,7 @@ A finalidade declarada é transformar uma sequência de imagens em um hyperstack
 - Quantidade de imagens compatível com `zplanes × tframes` e ordenação compatível com `XYCZT` (Z variando antes de T, para um canal).
 - Pasta de saída existente e memória para a sequência completa; o filtro de bordas cria uma duplicata.
 
-O código não verifica quantidade, ordenação, dimensões ou consistência da sequência antes da conversão. Não há versão de Fiji validada.
+O código não verifica quantidade, ordenação, dimensões ou consistência da sequência antes da conversão.
 
 ## Parâmetros
 
@@ -87,18 +85,10 @@ As propriedades finais solicitam C=1, Z=1, T=`tframes`, intervalo `ttime` em seg
 
 ## Uso após correção
 
-Abra uma sessão com somente as imagens necessárias, escolha uma sequência pequena com ordenação conhecida e informe Z/T corretos. Comece com filtro desativado, crop `0` e offset `0`. Confira cada plano selecionado antes de experimentar recorte, filtro de bordas e deslocamentos. Este procedimento é uma proposta de validação, não uma instrução para considerar o arquivo atual pronto.
-
-## Validação sugerida
-
-- Use Z=3 e T=2 com o plano de maior foco conhecido em cada tempo.
-- Compare a seleção com uma referência calculada independentemente; inclua o caso em que o máximo ocorre após uma queda intermediária da pontuação.
-- Teste imagens uniformes e totalmente pretas, offsets nos limites, recorte maior que a altura e entrada com número incorreto de imagens.
-- Compare os pixels copiados com o plano original: filtro e recorte devem afetar apenas a escolha, se essa for a finalidade adotada.
-- Confira C/Z/T, intervalo temporal e calibração espacial do TIFF reaberto.
+Abra uma sessão com somente as imagens necessárias, escolha uma sequência pequena com ordenação conhecida e informe Z/T corretos. Comece com filtro desativado, crop `0` e offset `0`. Confira cada plano selecionado antes de experimentar recorte, filtro de bordas e deslocamentos.
 
 ## Autoria e referência registradas
 
 Mario Cruz; Cimini’s Lab, Broad Institute of MIT and Harvard. Última atualização declarada: 18/07/2022.
 
-O cabeçalho pede citação em publicações e menciona: Sun et al. (2004), *Microscopy Research and Technique* 65, 139–149, algoritmo F-11 “Normalized Variance”; e Richard Mort, 27/09/2018. A referência completa e a relação precisa entre essas contribuições não foram verificadas nesta revisão.
+O cabeçalho pede citação em publicações e menciona: Sun et al. (2004), *Microscopy Research and Technique* 65, 139–149, algoritmo F-11 “Normalized Variance”; e Richard Mort, 27/09/2018.
