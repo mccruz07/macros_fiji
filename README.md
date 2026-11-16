@@ -1,10 +1,8 @@
 # Macros para Fiji / ImageJ
 
-Acervo de 11 macros e trechos de automação para Fiji / ImageJ. O objetivo é guardar as rotinas e explicar o que fazem, para facilitar consultas e adaptações futuras. Há conversores, processamento de séries e auxiliares para stacks de máscaras.
+Acervo de macros e trechos de automação para Fiji / ImageJ. O objetivo é guardar as rotinas e explicar o que fazem, para facilitar consultas e adaptações futuras. Há conversores, processamento de séries e auxiliares para stacks de máscaras.
 
 Os arquivos têm diferentes estágios de desenvolvimento e incluem rotinas dependentes de nomes de janelas ou caminhos de uma sessão específica. Manter uma macro no acervo não significa que ela esteja pronta para qualquer conjunto de imagens. Variantes e rascunhos são preservados quando ajudam a entender usos anteriores.
-
-**Repositório de destino:** https://github.com/mccruz07/macros_fiji
 
 ## Catálogo
 
@@ -58,7 +56,7 @@ Os códigos não oferecem uma política explícita para nomes repetidos. `saveal
 ```text
 macros_fiji/
 ├── README.md
-├── *.ijm                 # 11 macros, com os nomes originais
+├── *.ijm                 # macros, com os nomes originais
 └── docs/
     ├── <nome da macro>.md # um guia para cada macro
     └── ACERVO.md          # registro das inclusões e contexto de uso
@@ -68,12 +66,8 @@ Os nomes originais das macros foram preservados. Cada guia inclui objetivo, entr
 
 ## Autoria e referências
 
-Os cabeçalhos de `czitotiff.ijm`, `svstotiff.ijm` e `FindFocusMacroEdge.ijm` atribuem a autoria a **Mario Cruz** e mencionam o **Cimini’s Lab, Broad Institute of MIT and Harvard**. As datas registradas são 29/07/2022 para os conversores CZI/SVS e 18/07/2022 para a macro de foco. Os demais arquivos não contêm identificação formal de autoria no código fornecido.
-
-A macro de foco pede citação quando usada para gerar dados de publicações e menciona o algoritmo F-11, “Normalized Variance”, de Sun et al. (2004), *Microscopy Research and Technique*, 65, 139–149, além de Richard Mort (27/09/2018). Essas informações foram transcritas do cabeçalho; a referência bibliográfica completa ainda precisa ser conferida.
+A macro de foco pede citação quando usada para gerar dados de publicações e menciona o algoritmo F-11, “Normalized Variance”, de Sun et al. (2004), *Microscopy Research and Technique*, 65, 139–149, além de Richard Mort (27/09/2018). 
 
 Ao registrar uso científico, informe a macro, o autor indicado, o repositório e a versão ou commit efetivamente utilizado. Não há DOI ou versão de lançamento informados no material recebido.
 
-## Licença
 
-Nenhum arquivo de licença foi encontrado no material fornecido. Uma licença de uso e redistribuição deve ser escolhida pelo titular dos direitos antes de anunciar o projeto como software de código aberto.
