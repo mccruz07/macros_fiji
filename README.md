@@ -2,7 +2,7 @@
 
 Coleção de macros para conversão de imagens de microscopia, salvamento de imagens abertas e processamento de séries temporais.
 
-> Esta documentação descreve o código fornecido, sem modificá-lo. A revisão foi estática: as macros não foram executadas no Fiji nem validadas com imagens de teste. Algumas contêm problemas conhecidos; consulte o estado de cada uma antes de usar.
+> Esta documentação descreve o código fornecido, sem modificá-lo. Algumas contêm problemas conhecidos; consulte o estado de cada uma antes de usar.
 
 ## Catálogo
 
